@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 5000;
-        int b = 9000;
-        int c = b / 100;
+        int doPOpolneniya = 5000;
+        int summaPopolneniya = 9000;
+        int kolichestvoBonusov = summaPopolneniya / 100;
 
         int resault;
-        if (b < 1000) {
-            resault = a + b;
+        if (summaPopolneniya < 1000) {
+            resault = doPOpolneniya + summaPopolneniya;
         } else {
-            resault = a + b + c;
+            resault = doPOpolneniya + summaPopolneniya + kolichestvoBonusov;
         }
-            System.out.println("Сумма на счете: " + resault + " рублей ");
+        System.out.println("Сумма на счете: " + resault + " рублей ");
 
 
     }
